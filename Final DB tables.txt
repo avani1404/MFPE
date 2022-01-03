@@ -1,0 +1,53 @@
+1.User table
+	*userid(primary key)
+	password(encryption)(6 letters with special characters)
+	Name(length-4 to 50)
+	DOB(minimum age 18)
+	Contact number(10 digits)
+	Address(Mandatory)
+	Role(learner or vendor)
+	*Activation(default set to active)
+	
+2.Purchase history table
+	*Purchase_id(primary key)
+	*refrence_id(for checking the status of payment)
+	Learner_id
+	Course_id
+	Vendor_id
+	
+3.Available course table
+	*Course_id(Primary key)
+	Category 
+	Vendor_id
+	Date_added
+	Course_name
+	Course_duration
+	Course_description(blob)
+	*Status(Activate/Deactivate)
+	
+4.Review table 
+	Learner_id
+	course_id
+	course_name
+	Vendor_name
+	Rating	
+	Review(blob)
+		
+5.Course completion satus table
+	course_id
+	learner_id
+	status	
+
+6.Services table
+	service_id
+	service_name
+	vendor_id
+	course_id
+	status
+
+
+
+
+	
+		
+	
